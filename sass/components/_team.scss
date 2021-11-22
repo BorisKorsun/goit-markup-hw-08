@@ -1,0 +1,21 @@
+.team {
+  padding-top: 60px;
+  background-color: $secondary-background-color;
+  text-align: center;
+}
+
+.team > * {
+  text-align: inherit;
+}
+
+.team-title {
+  margin-bottom: 50px;
+
+  color: $second-title-color;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 0.84;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

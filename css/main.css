@@ -430,4 +430,28 @@ body {
 
 .features-list > li:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.team {
+  padding-top: 60px;
+  background-color: #f5f4fa;
+  text-align: center;
+}
+
+.team > * {
+  text-align: inherit;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 0.84;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
