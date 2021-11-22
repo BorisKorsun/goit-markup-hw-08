@@ -8,6 +8,10 @@
   text-align: inherit;
 }
 
+.team-list > .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .team-title {
   margin-bottom: 50px;
 
@@ -18,4 +22,71 @@
   line-height: 0.84;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.master-div {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.master-div img {
+  display: block;
+  width: 100%;
+}
+
+.masters-name {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $second-title-color;
+}
+
+.team-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $second-text-color;
+}
+
+.team-links .link {
+  margin-top: 16px;
+
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.team-icon {
+  height: 100%;
+  width: 100%;
+  fill: #afb1b8;
+
+  transition: fill 250ms $cubic;
+
+  .team-links .link:hover &,
+  .team-links .link:focus & {
+    fill: #fff;
+  }
+}
+
+.team-links {
+  display: flex;
+  justify-content: center;
 }
