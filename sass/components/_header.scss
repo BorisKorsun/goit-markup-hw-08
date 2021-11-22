@@ -1,0 +1,33 @@
+.header {
+  height: 60px;
+}
+
+.header__brand-link {
+  display: inline-block;
+
+  padding-top: 16px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  color: #000000;
+  text-decoration: none;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.brand-span-web {
+  color: $brand-color;
+}
+
+.header__nav-list {
+  display: none;
+}
+
+.header__contacts {
+  display: none;
+}
