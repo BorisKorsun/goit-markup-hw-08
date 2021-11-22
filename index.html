@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +22,11 @@
             <nav class="header-nav">
                 <a class="link header__brand-link" lang="en" href=""><span class="brand-span-web">Web</span>Studio</a>
                 <div class="header__menu">
-                    <svg>
-                        <use href="./img/menu.svg"></use>
-                    </svg>
+                    <button type="button" class="header__btn">
+                        <svg class="header__menu-icon" width="40" height="40">
+                            <use href="./img/icons-mobile.svg#menu"></use>
+                        </svg>
+                    </button>
                     <ul class="list header__nav-list">
                         <li class="item">
                             <a class="link header__nav-link" href="./index.html">Студия</a>
@@ -39,7 +41,7 @@
                     <ul class="list header__contacts">
                         <li class="item">
                             <a class="link contacts-link header-mail" href="mailto:info@devstudio.com">
-                                <svg class="header__icon mail" width="16" height="12">
+                                <svg class="header__icon mail" viewBox="0 0 1 1" width="16" height="12">
                                     <use href="./img/icons.svg#mail"></use>
                                 </svg>
                                 info@devstudio.com
@@ -80,7 +82,7 @@
                 <div class="container">
                     <h2 class="title features-title visually-hidden">Особенности</h2>
                     <ul class="list features-list">
-                        <li class="item ">
+                        <li class="item">
                             <div class="features-div">
                                 <svg class="features-icon">
                                     <use href="./img/icons.svg#antenna"></use>
@@ -523,5 +525,6 @@
     
     <script src="./js/modal.js"></script>
     <script src="./js/console.js"></script>
+    <script src="./js/header-menu.js"></script>
 </body>
 </html>

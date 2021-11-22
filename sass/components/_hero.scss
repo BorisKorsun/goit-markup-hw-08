@@ -1,0 +1,52 @@
+.hero {
+  height: 400px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-overlay.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.hero > * {
+  text-align: inherit;
+}
+
+.hero-title {
+  padding-top: 118px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  color: $primary-title-color;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: $brand-color;
+
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

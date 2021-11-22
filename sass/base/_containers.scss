@@ -1,18 +1,14 @@
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
 
-  @media screen and (max-width: $mobile) {
-    background-color: orange;
-  }
+body {
+  min-height: 100vh;
+}
 
-  @media screen and (min-width: $tablet) {
-    background-color: green;
-  }
-
-  @media screen and (min-width: $desktop) {
-    background-color: blue;
+@media screen and (min-width: 480px) {
+  body {
   }
 }

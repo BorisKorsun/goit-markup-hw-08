@@ -2,12 +2,17 @@
   height: 60px;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header__brand-link {
   display: inline-block;
 
   padding-top: 16px;
   padding-bottom: 25px;
-  margin-right: 93px;
 
   color: #000000;
   text-decoration: none;
@@ -22,6 +27,19 @@
 
 .brand-span-web {
   color: $brand-color;
+}
+
+.header__btn {
+  background-color: transparent;
+  border: transparent;
+}
+
+.header__menu-icon {
+  display: inline-block;
+
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .header__nav-list {
