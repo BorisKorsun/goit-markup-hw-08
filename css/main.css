@@ -944,4 +944,17 @@ body {
   .features-list > .item:nth-child(2n+1) {
     margin-right: 30px;
   }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-list > .item {
+    width: calc((100% - 60px) / 2);
+  }
+  .team-list > .item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
