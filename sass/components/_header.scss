@@ -33,7 +33,10 @@
 .header__menu-icon {
   display: inline-block;
 
-  &:hover {
+  transition: fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
     fill: $accent-color;
   }
 }
@@ -55,15 +58,23 @@
 }
 
 .header__btn .icon-cross {
-  display: none;
+  opacity: 0;
+
+  transition: opacity 250ms $cubic;
 }
 
 .header__btn.is-open .icon-cross {
-  display: block;
+  opacity: 1;
+}
+
+.header__btn .icon-menu {
+  opacity: 1;
+
+  transition: opacity 250ms $cubic;
 }
 
 .header__btn.is-open .icon-menu {
-  display: none;
+  opacity: 0;
 }
 
 .menu-container {
@@ -73,15 +84,17 @@
   width: 100%;
   min-height: 796px;
 
-  display: none;
+  opacity: 0;
   background-color: #fff;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 48px;
   padding-right: 83px;
 
+  transition: opacity 250ms $cubic;
+
   &.is-open {
-    display: block;
+    opacity: 1;
   }
 }
 
@@ -97,7 +110,10 @@
   line-height: 47px;
   letter-spacing: 0.02em;
 
-  &:hover {
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -114,7 +130,10 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
 
-  &:hover {
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -140,6 +159,7 @@
 .menu__social-link {
   color: $accent-color;
 
+  text-decoration: nonef;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
