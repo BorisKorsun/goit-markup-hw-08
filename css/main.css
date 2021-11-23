@@ -957,4 +957,18 @@ body {
   .team-list > .item:nth-child(2n+1) {
     margin-right: 30px;
   }
+}
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .clients-list > .item {
+    width: calc((100% - 90px) / 3);
+    height: 92px;
+  }
+  .clients-list > .item:nth-child(3n+3) {
+    margin-right: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

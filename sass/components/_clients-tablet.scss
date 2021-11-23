@@ -1,0 +1,15 @@
+@media screen and (min-width: $tablet) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .clients-list > .item {
+    width: calc((100% - 90px) / 3);
+    height: 92px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 30px;
+    }
+  }
+}
