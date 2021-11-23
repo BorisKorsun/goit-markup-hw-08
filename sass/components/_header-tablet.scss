@@ -1,2 +1,84 @@
 @media screen and (min-width: $tablet) {
+  .header__btn {
+    display: none;
+  }
+
+  .header__nav-list {
+    display: flex;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header__menu {
+    margin-left: 88px;
+  }
+
+  .header__nav-link {
+    margin-right: 50px;
+
+    color: $primary-text-color;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .header__contacts {
+    display: block;
+  }
+
+  .header__menu {
+    display: flex;
+  }
+
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .contacts-link {
+    color: $second-text-color;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
+  .header__icon.mail {
+    margin-right: 10px;
+    fill: #757575;
+
+    transition: fill 250ms $cubic;
+
+    .header__contacts .link:hover &,
+    .header__contacts .link:focus & {
+      fill: $accent-color;
+    }
+  }
+
+  .header__icon.smartphone {
+    margin-right: 10px;
+    fill: #757575;
+
+    transition: fill 250ms $cubic;
+
+    .header__contacts .link:hover &,
+    .header__contacts .link:focus & {
+      fill: $accent-color;
+    }
+  }
 }
