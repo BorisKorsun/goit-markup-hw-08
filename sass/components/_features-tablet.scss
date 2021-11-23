@@ -1,0 +1,18 @@
+@media screen and (min-width: $tablet) {
+  .menu-container {
+    display: none;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list > .item {
+    width: calc((100% - 60px) / 2);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+}

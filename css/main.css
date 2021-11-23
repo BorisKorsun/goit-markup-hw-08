@@ -882,6 +882,7 @@ body {
 
   .header__contacts {
     display: block;
+    margin-left: auto;
   }
 
   .header__menu {
@@ -925,5 +926,22 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list > .item {
+    width: calc((100% - 60px) / 2);
+  }
+  .features-list > .item:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }/*# sourceMappingURL=main.css.map */
