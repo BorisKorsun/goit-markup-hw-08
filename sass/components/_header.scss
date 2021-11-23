@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 60px;
 }
 
@@ -29,11 +30,6 @@
   color: $brand-color;
 }
 
-.header__btn {
-  background-color: transparent;
-  border: transparent;
-}
-
 .header__menu-icon {
   display: inline-block;
 
@@ -48,4 +44,104 @@
 
 .header__contacts {
   display: none;
+}
+
+.header__btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header__btn .icon-cross {
+  display: none;
+}
+
+.header__btn.is-open .icon-cross {
+  display: block;
+}
+
+.header__btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 796px;
+
+  display: none;
+  background-color: #fff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 48px;
+  padding-right: 83px;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.menu__link {
+  display: inline-block;
+  margin-bottom: 32px;
+
+  color: $primary-text-color;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.menu__tel,
+.menu__mail {
+  display: inline-block;
+
+  color: $second-text-color;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.menu__tel {
+  margin-top: 270px;
+  margin-bottom: 32px;
+  font-size: 34px;
+}
+
+.menu__mail {
+  margin-bottom: 64px;
+}
+
+.menu__social-media {
+  display: flex;
+}
+
+.menu__social-media > .menu__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu__social-link {
+  color: $accent-color;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }

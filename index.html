@@ -22,11 +22,51 @@
             <nav class="header-nav">
                 <a class="link header__brand-link" lang="en" href=""><span class="brand-span-web">Web</span>Studio</a>
                 <div class="header__menu">
-                    <button type="button" class="header__btn">
-                        <svg class="header__menu-icon" width="40" height="40">
-                            <use href="./img/icons-mobile.svg#menu"></use>
+                    <button type="button"
+                     class="header__btn"
+                     aria-expanded="false"
+                      data-menu-button>
+                        <svg class="header__menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="./img/icons-mobile.svg#menu"></use>
+                            <use class="icon-cross" href="./img/icons-mobile.svg#cross"></use>
                         </svg>
                     </button>
+                    <div class="menu-container" data-menu>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="">Студия</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="">Портфолио</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="menu__contacts">
+                            <li class="menu__connection">
+                                <a class="menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                            <li class="menu__connection">
+                                <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="menu__social-media">
+                            <li class="menu__social-item">
+                                <a class="menu__social-link" href="">Instagram</a>
+                            </li>
+                            <li class="menu__social-item">
+                                <a class="menu__social-link" href="">Twitter</a>
+                            </li>
+                            <li class="menu__social-item">
+                                <a class="menu__social-link" href="">Facebook</a>
+                            </li>
+                            <li class="menu__social-item">
+                                <a class="menu__social-link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <ul class="list header__nav-list">
                         <li class="item">
                             <a class="link header__nav-link" href="./index.html">Студия</a>
@@ -70,7 +110,7 @@
                     <div class="container">
                         <h1 class="title hero-title">Эффективные решения для вашего бизнеса</h1>
                         <button class="btn hero-btn" type="button">
-                            <span data-modal-open class="btn-span">Заказать услугу</span>
+                            <span class="btn-span">Заказать услугу</span>
                         </button>
                     </div>
             </section>
