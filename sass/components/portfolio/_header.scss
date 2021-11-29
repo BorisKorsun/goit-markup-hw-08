@@ -89,10 +89,13 @@
   padding-left: 48px;
   padding-right: 83px;
 
+  pointer-events: none;
+
   transition: opacity 250ms $cubic;
 
   &.is-open {
     opacity: 1;
+    pointer-events: painted;
   }
 }
 
