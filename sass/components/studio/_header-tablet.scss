@@ -7,6 +7,24 @@
     display: flex;
   }
 
+  .header__nav-list .item:first-child {
+    position: relative;
+  }
+
+  .header__nav-list .item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 102%;
+    left: 0;
+
+    display: inline-block;
+    width: 47px;
+    height: 4px;
+    border-radius: 4px;
+
+    background-color: $accent-color;
+  }
+
   .header-nav {
     display: flex;
     justify-content: flex-start;
@@ -60,7 +78,7 @@
   }
 
   .header__icon.mail {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: #757575;
 
     transition: fill 250ms $cubic;
@@ -72,7 +90,7 @@
   }
 
   .header__icon.smartphone {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: #757575;
 
     transition: fill 250ms $cubic;

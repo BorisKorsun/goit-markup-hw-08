@@ -1,52 +1,17 @@
 .header {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 60px;
 }
 
-.header-nav {
+.header-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.header__brand-link {
+.brand-link {
   display: inline-block;
-
-  padding-top: 16px;
-  padding-bottom: 25px;
-
-  color: #000000;
-  text-decoration: none;
-
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.brand-span-web {
-  color: $brand-color;
-}
-
-.header__menu-icon {
-  display: inline-block;
-
-  transition: fill 250ms $cubic;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}
-
-.header__nav-list {
-  display: none;
-}
-
-.header__contacts {
-  display: none;
 }
 
 .header__btn {
@@ -77,12 +42,45 @@
   opacity: 0;
 }
 
+.header__menu-icon {
+  display: inline-block;
+  margin-left: 183px;
+
+  transition: fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.header__btn .icon-menu {
+  opacity: 1;
+
+  transition: opacity 250ms $cubic;
+}
+
+.header__btn.is-open .icon-menu {
+  opacity: 0;
+}
+
+.header__btn .icon-cross {
+  opacity: 0;
+
+  transition: opacity 250ms $cubic;
+}
+
+.header__btn.is-open .icon-cross {
+  opacity: 1;
+}
+
 .menu-container {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   min-height: 796px;
+  z-index: 1;
 
   opacity: 0;
   background-color: #fff;
@@ -142,10 +140,6 @@
   margin-top: 270px;
   margin-bottom: 32px;
   font-size: 34px;
-}
-
-.menu__mail {
-  margin-bottom: 64px;
 }
 
 .menu__social-media {

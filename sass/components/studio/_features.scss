@@ -21,6 +21,14 @@
   margin: -1px;
 }
 
+.features-div {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-background-color;
+}
+
 .features-icon {
   width: 70px;
   height: 70px;
@@ -46,10 +54,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $second-text-color;
-}
-
-.features-list > li {
-  background-color: $secondary-background-color;
 }
 
 .features-list > li:not(:last-child) {

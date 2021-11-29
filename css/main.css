@@ -289,6 +289,25 @@ body {
   min-height: 100vh;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 60px;
+}
+
 .header {
   position: relative;
   height: 60px;
@@ -504,6 +523,13 @@ body {
   margin: -1px;
 }
 
+.features-div {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
 .features-icon {
   width: 70px;
   height: 70px;
@@ -527,10 +553,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.features-list > li {
-  background-color: #f5f4fa;
 }
 
 .features-list > li:not(:last-child) {
@@ -676,6 +698,7 @@ body {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
   text-align: center;
 }
@@ -857,6 +880,22 @@ body {
     display: flex;
   }
 
+  .header__nav-list .item:first-child {
+    position: relative;
+  }
+
+  .header__nav-list .item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 102%;
+    left: 0;
+    display: inline-block;
+    width: 47px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #2196f3;
+  }
+
   .header-nav {
     display: flex;
     justify-content: flex-start;
@@ -904,7 +943,7 @@ body {
   }
 
   .header__icon.mail {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -913,7 +952,7 @@ body {
   }
 
   .header__icon.smartphone {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
